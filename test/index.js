@@ -1,11 +1,11 @@
-import {build, stop} from 'https://deno.land/x/esbuild@v0.12.1/mod.js'
-import httpFetch from '../http-fetch.js'
+import {build, stop} from 'https://deno.land/x/esbuild@v0.13.8/mod.js'
+import denoCache from '../mod.ts'
 
 let {outputFiles} = await build({
   bundle: true,
   entryPoints: ['test/hello.jsx'],
   jsxFactory: 'h',
-  plugins: [httpFetch],
+  plugins: [denoCache],
   write: false
 })
 
