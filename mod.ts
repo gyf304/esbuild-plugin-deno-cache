@@ -3,7 +3,7 @@ import type {
   OnLoadArgs,
   OnResolveArgs,
   PluginBuild,
-} from "https://deno.land/x/esbuild@v0.13.8/mod.d.ts";
+} from "https://deno.land/x/esbuild@v0.13.14/mod.d.ts";
 
 import { cache } from "https://deno.land/x/cache@0.2.13/mod.ts";
 
